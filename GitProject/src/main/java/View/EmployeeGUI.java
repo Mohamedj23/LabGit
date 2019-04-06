@@ -224,7 +224,14 @@ public class EmployeeGUI extends VBox implements GuiInterface{
         updateButton.setOnAction(new UpdateButtonHandler(this));
 
         deleteButton.setOnAction(new DeleteButtongHandler(this));
+        /*Mohamed*/
+        firstButton.setOnAction(new FirstButtonHandler(this));
+        
+        nextButton.setOnAction(new NextButtonHandler(this));
+        
+        previousButton.setOnAction(new PreviousButtonHandler(this));
 
+        lastButton.setOnAction(new LastButtonHandler(this));
         
         firstButton.fire();
         
@@ -260,21 +267,21 @@ public class EmployeeGUI extends VBox implements GuiInterface{
 
     @Override
     public void getFirstEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        mainObject.getFirstEmployee(employee);
     }
 
     @Override
     public void getNextEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        mainObject.getNextEmployee(employee);
     }
 
     @Override
     public void getPreviousEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        mainObject.getPreviousEmployee(employee);
     }
 
     @Override
     public void getLastEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        mainObject.getLastEmployee(employee);
     }
 }

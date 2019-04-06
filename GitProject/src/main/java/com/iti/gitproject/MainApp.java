@@ -8,8 +8,6 @@ import com.iti.gitproject.model.databasecontrollerimpl.DatabaseControllerImpl;
 import com.iti.gitproject.model.databasecontrollerinterface.DBControllerInterface;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -24,12 +22,10 @@ public class MainApp extends Application implements ControllerInterface {
     @Override
     public void start(Stage stage) throws Exception {
         EmployeeGUI root = new EmployeeGUI(this);
-        // Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
 
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("/styles/Styles.css");
 
-        stage.setTitle("JavaFX and Maven");
+        stage.setTitle("Employees Sheet");
         stage.setScene(scene);
         stage.show();
     }
@@ -68,22 +64,22 @@ public class MainApp extends Application implements ControllerInterface {
     
     @Override
     public void getFirstEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getFirstEmployee(employee);
     }
 
     @Override
     public void getNextEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getNextEmployee(employee);
     }
 
     @Override
     public void getPreviousEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getPreviousEmployee(employee);
     }
 
     @Override
     public void getLastEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getLastEmployee(employee);
     }
 
 }
