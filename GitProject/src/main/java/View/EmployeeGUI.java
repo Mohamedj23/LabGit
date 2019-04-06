@@ -241,20 +241,22 @@ public class EmployeeGUI extends VBox implements GuiInterface{
         phoneTF.setText(" ");
     }
 
+    /*azza*/
+    
     @Override
     public void updateEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        mainObject.updateEmployee(employee);
+     }
 
     @Override
     public void insertEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        mainObject.insertEmployee(employee);
+     }
 
     @Override
     public void deleteEmployee() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        mainObject.deleteEmployee();
+     }
 
     @Override
     public void getFirstEmployee(Employee employee) {
