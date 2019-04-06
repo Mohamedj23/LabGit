@@ -27,7 +27,7 @@ public class DatabaseControllerImpl implements DBControllerInterface {
         database.connectToDataBase();
         statement = database.getStatement();
         try {
-            resultSet = statement.executeQuery("Select ID, F_NAME,L_NAME,M_NAME,EMAIL,PHONE from Employee");
+            resultSet = statement.executeQuery("Select ID, F_NAME,L_NAMEE,M_NAME,EMAIL,PHONE from Employee");
 
         } catch (SQLException ex) {
             ex.printStackTrace();
