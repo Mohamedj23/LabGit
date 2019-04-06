@@ -64,22 +64,22 @@ public class MainApp extends Application implements ControllerInterface {
     
     @Override
     public void getFirstEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getFirstEmployee(employee);
     }
 
     @Override
     public void getNextEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getNextEmployee(employee);
     }
 
     @Override
     public void getPreviousEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getPreviousEmployee(employee);
     }
 
     @Override
     public void getLastEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dbController.getLastEmployee(employee);
     }
 
 }
